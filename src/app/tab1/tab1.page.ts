@@ -23,6 +23,7 @@ export class Tab1Page implements OnInit {
   loadUsers() {
     this.performGraphql(userQuery).subscribe(response => {
       this.users = response.data.users;
+      console.log(this.users);
     });
   }
 
